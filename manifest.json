@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Scryfall_3cb_Ban_Display",
+    "version": "0.1",
+    "description": "Displays 3cb bans while browsing Scryfall",
+    "permissions": ["activeTab"],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "128": "media/watermark.png"
+      }
+    },
+    "icons": {
+      "128": "media/watermark.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://scryfall.com/*"],
+        "css": ["styles.css"],
+        "js": ["tcb.js"]
+      }
+    ]
+  }
