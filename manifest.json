@@ -18,6 +18,10 @@
         "matches": ["https://scryfall.com/*"],
         "css": ["styles.css"],
         "js": ["tcb.js"]
+      },
+      {
+        "matches": ["https://www.3cardblind.com/format-info/banlist"],
+        "js": ["update.js"]
       }
     ]
   }
